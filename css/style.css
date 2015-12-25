@@ -1,0 +1,44 @@
+* {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #eee;
+  padding: 20px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+.jumbotron {
+  background-color: #159;
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron > h1 {
+  font-family: Constantia, 'Merriweather', serif;
+  font-variant: small-caps;
+}
+
+.tab-content {
+  background-color: #fff;
+  border: 1px #ddd solid;
+  border-top: 0;
+  padding: 30px;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #ddd;
+}
+
+.row {
+  margin: 0;
+}
+
+.face.img-responsive {
+  margin: 0 auto;
+  width: 200;
+  height: 200;
+}
+

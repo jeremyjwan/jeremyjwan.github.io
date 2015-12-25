@@ -1,405 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Jeremy Wan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-    <title>Jeremy Wan Resume Website</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-    <script src="assets/js/Chart.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <img src="img/jeremyjwan.jpg" class="face img-circle img-responsive" data-toggle="tooltip" title="Hi there! :)">
+        <h1>Jeremy Wan</h1>
+        <h3>UC Berkeley EECS - Graduating 2017</h3>
+      </div>
+      <div class="tabbable">
+        <ul class="nav nav-tabs nav-justified">
+          <li class="active"><a href="#about" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> About</a></li>
+          <li><a href="#projects" data-toggle="tab"><span class="glyphicon glyphicon-folder-open"></span> Projects</a></li>
+          <li><a href="#resume" data-toggle="tab"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+          <li><a href="#contact" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="about">
+            <h2>Hello world!</h2>
+              <p>My name is <strong>Jeremy Wan</strong> and I am studying <a href="eecs.berkeley.edu/" target="_blank"><abbr data-toggle="tooltip" title="Electrical Engineering and Computer Science">EECS</abbr></a> at the University of California, Berkeley. I'm interested in full stack software engineering, computer security, and technology consulting. I help protect 8000+ clients as an information security consultant for <a href="https://berkeley.edu/" target="_blank">UC Berkeley</a> <a href="https://rescomp.berkeley.edu/" target="_blank">Student Affairs</a>.</p>
+            <h3>Nice to meet you.</h3>
+            <p>I'm from the bay area - born and raised. Outside of school and work, I do tensegrity robotics research at the <a href="http://best.berkeley.edu/" target="_blank"><abbr data-toggle="tooltip" title="Berkeley Emergent Space Technologies">BEST</abbr></a> lab and use python to help crack the code to online education at the <a href="http://psychology.berkeley.edu/" target="_blank">UC Berkeley Department of Psychology</a>. I also provide free technology consulting to local small businesses with <a href="http://cyc.berkeley.edu/" target="_blank">Consult Your Community</a>. I love beatboxing, tennis, and hip-hop dancing.</p>
+          </div>
 
-  <body data-spy="scroll" data-offset="0" data-target="#nav">
+          <div class="tab-pane fade" id="projects">
+            <div class="page-header">
+              <h2>Personal projects <small>Take a look.</small></h2>
+              <p>Feel free to <a href="#contact" data-toggle="tab">shoot me a message</a> about any of my projects!</p>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Cross Site Scripting Demo </h3>
+                <h4>PHP</h4>
+                <p>
+                  In order to educate others about secure computing practices, I created a demo that exhibits the security breaching capabilities of cross site scripting - the most popular kind of web vulnerability active today.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Backend User Database</h3>
+                <h4>SQL | MS Access</h4>
+                <p>
+                  As a final deliverable for my pro-bono technology consulting to Sellegit, I created a backend relational database using SQL and MS Access.  As project manager, I combined the skill sets of my team to create a site features such as “recommended items list” with the help of analytical queries, histograms, and regression models.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h3>jeremyjwan.github.io</h3>
+                <h4>HTML/CSS/JavaScript | Twitter Bootstrap</h4>
+                <p>
+                  <a href="https://github.com/jchou/jchou.github.io" class="btn btn-xs btn-primary" target="_blank">View on Github <span class="glyphicon glyphicon-new-window"></span></a>
+                </p>
+                <p>
+                  You're looking at it! My personal website uses <a href="https://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> to deliver a responsive, clean experience.
+                </p>
+              </div>
+            </div>
 
-	<div id="section-topbar">
-		<div id="topbar-inner">
-			<div class="container">
-				<div class="row">
-					<div class="dropdown">
-						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
-						</ul><!--/ uL#nav -->
-					</div><!-- /.dropdown -->
+            <div class="page-header">
+              <h2>Class projects <small>UC Berkeley <abbr title="Electrical Engineering and Computer Sciences" data-toggle="tooltip">EECS</abbr></small></h2>
+            </div>            
 
-					<div class="clear"></div>
-				</div><!--/.row -->
-			</div><!--/.container -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">CS 170: Efficient Algorithms and Intractable Problems</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>NP-Hard Problem Solver</h3>
+                    <h4>Python</h4>
+                    <p>
+                      An <a href="https://en.wikipedia.org/wiki/NP-hardness" target="_blank">NP-hard</a> problem normally takes very long to find a solution for. Given the NP-hard problem of processing graphs with hundreds of forward edges and returning a linearized ordering that yields the most forward edges, an approximation algorithm needs to return a solution within a limited time. By combining <a href="https://en.wikipedia.org/wiki/Greedy_algorithm" target="_blank">Greedy Algorithms</a> with <a href="https://en.wikipedia.org/wiki/Dynamic_programming" target="_blank">Dynamic Programming</a>, our approximation placed us in the top 20% in a competition for the most forward edges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">CS 61C: Computer Architecture (Machine Structures)</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>Distributed Page Rank Analyzer</h3>
+                    <h4>Python | Apache Hadoop MapReduce | Amazon EC2 cloud computing</h4>
+                    <p>
+                      Given a graph showing the connections between web pages, page rank analysis can give the likelihood of a page being visited next based on where we currently are.  By using <a href="https://en.wikipedia.org/wiki/MapReduce" target="_blank">MapReduce</a> and <a href="https://aws.amazon.com" target="_blank"><abbr title="Amazon Web Services" data-toggle="tooltip">AWS</abbr></a> parallel processing, the algorithm can efficiently return the page rank order of a Facebook graph with over 100,000 edges.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>BearGit</h3>
+                    <h4>C</h4>
+                    <p>
+                      This project utilizes C's memory management to implement the version control system of <a href="https://github.com" target="_blank">Github</a>. Primary commands including add, commit, and checkout are implemented and made easy to use through an interactive UI.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>MIPS Instruction Set Emulator</h3>
+                    <h4>C</h4>
+                    <p>
+                      Parses instructions in the <abbr title="Microprocessor without Interlocked Pipeline Stages" data-toggle="tooltip">MIPS</abbr> <abbr title="Instruction Set Architecture" data-toggle="tooltip">ISA</abbr> to simulate a processor operating on the MIPS instruction set. Sample instructions include bit shifting, reading/writing in memory, arithmetic operations, conditional statements, instruction execution logic jumps, and system calls.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Optimized Depth-Perception Processor</h3>
+                    <h4>C | OpenMP</h4>
+                    <p>
+                      Performs optimized depth perception analysis on 2D images to create “depth maps”. Specific optimization techniques include <a href="http://en.wikipedia.org/wiki/Streaming_SIMD_Extensions" title="Streaming SIMD Extensions" data-toggle="tooltip">SSE</a> batch processing, register and cache blocking, loop unrolling, matrix padding, and OpenMP multi-threading and parallel processing.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Processor Design</h3>
+                    <h4>Logisim</h4>
+                    <p>
+                      Simulates a 16-bit processor in <a href="//cburch.com/logisim/" target="_blank">Logisim</a>, complete with a specified <abbr title="Instruction Set Architecture" data-toggle="tooltip">ISA</abbr> including arithmetic operations, writing/reading to/from registers and memory, and instruction logic such as jumping and branching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-			<div class="clear"></div>
-		</div><!--/ #topbar-inner -->
-	</div><!--/ #section-topbar -->
-	
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<h1>Jeremy Wan</h1>
-					<h3>Software Engineer | jeremyjwan@berkeley.edu</h3>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.#headerwrap -->
-	
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">CS 61B: Data Structures</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>Gitlet</h3>
+                    <h4>Java</h4>
+                    <p>
+                      This project combines a variety of data structures and algorithms to implement the version control system of <a href="https://github.com" target="_blank">Github</a>. All primary commands including add, commit, merge, checkout, and rebase are implemented and made easy to use through an interactive UI.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Exploding Checkers</h3>
+                    <h4>Java</h4>
+                    <p>
+                      The classic game of <a href="https://en.wikipedia.org/wiki/Trie" target="_blank">checkers</a>, but with an explosive twist. Java OOP was used to design a GUI from scratch and implement functionality for multiple types of pieces including a bomb that took itself and every surrounding piece out of the game when it captured an enemy.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Word History Map</h3>
+                    <h4>Java</h4>
+                    <p>
+                      By processing a dictionary dataset, this map can produce graphs showing the popularity of words over history. Multiple data structures and time series analysis are combined in order to group words by similar meaning and time.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Tries</h3>
+                    <h4>Java</h4>
+                    <p>
+                      <a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Tries</a> are a type of ordered tree data structure that are very useful for efficiently finding words based on prefixes. By building this data structure from scratch, the functionality of word autocompletion popular in Google searches and texting are enabled. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	<section id="about" name="about"></section>
-	<div id="intro">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
-				</div>
-				<div class="col-lg-6">
-					<p>I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
-				</div>
-				<div class="col-lg-3">
-					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
-				</div>
-				
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">CS 61A: Structure and Interpretation of Computer Programs</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3>Hog</h3>
+                    <h4>Python</h4>
+                    <p>
+                      Hog is a text-based dice game. Among several gameplay rules, the game implements (and allows easy extension of) several different strategies to achieve victory using probability and other heuristics.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Yelp Data Maps</h3>
+                    <h4>Python</h4>
+                    <p>
+                      Data visualization project that processes a large <a href="http://www.yelp.com" target="_blank">Yelp</a> dataset and combines data abstraction with learning algorithms to create a map of restaurants grouped by location clusters and user preference.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Ants vs. ZomBees</h3>
+                    <h4>Python - OOP</h4>
+                    <p>
+                      Ants vs. ZomBees is a tower defense game inspired by the popular game <a href="https://en.wikipedia.org/wiki/Plants_vs._Zombies" target="_blank">Plants vs. Zombies</a>. The project is an exercise in Object Oriented Programming and focuses on code modularity and reusability.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Scheme Interpreter</h3>
+                    <h4>Python</h4>
+                    <p>
+                      Scheme interpreter interprets a subset of the <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme programming language</a>, naturally focusing on the power of recursion and functional languages.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">ENG 7: Programming for Engineers</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Robot Tournament</h3>
+                    <h4>MATLAB</h4>
+                    <p>
+                      As the final project of the course, we designed a game strategy for a simulated robot duel where each robot pursued each other while grabbing fuel tanks and avoiding hazards. I combined my MATLAB skills with basic decision analysis algorithms to finish 7th in a class of 200+ students. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	<section id="resume" name="resume"></section>
-	<!--EDUCATION DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Master of Web Design</t><br/>
-						St. Patrick University <br/>
-						<i>3 Years Course</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>GRADUATING IN MAY 2014</sm><br/>
-					<imp><sm>IN PROGRESS</sm></imp>
-					</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Degree of Web Developer</t><br/>
-						Hastings University <br/>
-						<i>2 Years Course</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2012</sm></p>
-				</div>
-	
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-	
-	
-	<!--WORK DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Front-end Developer</t><br/>
-						Black Tie Corp. <br/>
-					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>AUGUST 2012 - CURRENT</sm></p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Web Designer - Intern</t><br/>
-						Onassis Ltd. <br/>
-					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2010 - JULY 2012</sm></p>
-				</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-
-	<!--AWARDS DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>AWARDS</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Best Web Design</t><br/>
-						Black Tie Site <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>NOVEMBER 2013</sm></p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Designer of the Year</t><br/>
-						Awwwards Site
-					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013</sm></p>
-				</div>
-		
-		</div><!--/.row -->
-		<br>
-	</div><!--/.container -->
-	
-	
-	<!--SKILLS DESCRIPTION -->
-	<div id="skillswrap">
-		<div class="container">
-			<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
-						<h5>SKILLS</h5>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="javascript" height="130" width="130"></canvas>
-						<p>Javascript</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 70,
-										color:"#1abc9c"
-									},
-									{
-										value : 30,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="bootstrap" height="130" width="130"></canvas>
-						<p>Bootstrap</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 90,
-										color:"#1abc9c"
-									},
-									{
-										value : 10,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="wordpress" height="130" width="130"></canvas>
-						<p>Wordpress</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 65,
-										color:"#1abc9c"
-									},
-									{
-										value : 35,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					
-					<div class="col-lg-3 col-lg-offset-3 centered">
-						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 80,
-										color:"#1abc9c"
-									},
-									{
-										value : 20,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="photoshop" height="130" width="130"></canvas>
-						<p>Photoshop</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 70,
-										color:"#1abc9c"
-									},
-									{
-										value : 30,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="illustrator" height="130" width="130"></canvas>
-						<p>Illustrator</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-
-			</div><!--/.row -->
-			<br>
-		</div><!--/.container -->
-	</div><!--/ #skillswrap -->
-
-
-
-	<section id="work" name="work"></section>
-	<!--PORTFOLIO DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PORTFOLIO</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-					<p>CANALS OF ENGLAND</p>
-				<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-					<sm><i class="icon-tag"></i> design</sm></more> 
-				</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>SANKEY</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> front-end</sm></more> 
-					</p>
-				</div>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>WE GROW</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> web design</sm></more> 
-					</p>
-				</div>
-		
-		</div><!--/.row -->
-		<br>
-		<br>
-	</div><!--/.container -->
-	
-
-
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Email</t><br/>
-						william@blacktie.co <br/>
-					</p>
-					<p><t>Adress</t><br/>
-						Some Ave. 987 <br/>
-						Postal 23892 <br/>
-						London, England. <br/>
-					</p>
-					<p><t>Phone</t><br/>
-						+55 8933-2383 <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<a href="#"><i class="icon-dribbble"></i></a>
-						<a href="#"><i class="icon-twitter"></i></a>
-						<a href="#"><i class="icon-facebook"></i></a>
-						<a href="#"><i class="icon-linkedin"></i></a>
-						<a href="#"><i class="icon-apple"></i></a>
-
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
-	
-	<div id="c">
-		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
-		
-		</div>
-	</div>
-	
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
+          <div class="tab-pane fade" id="resume">
+            <a href="Jeremy_Wan_Resume.pdf" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-save"></span> Download Jeremy_Wan_Resume.pdf</a>
+            <div class="embed-responsive embed-responsive-4by3">
+              <object data="Jeremy_Wan_Resume.pdf#view=FitH" type="application/pdf" class="embed-responsive-item"></object>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact">
+            <h2>Let's talk.</h2>
+            <div class="row">
+              <div class="col-xs-1 col-md-1 text-right"><strong>email:</strong></div>
+              <div class="col-xs-11 col-md-11"><script type="text/javascript">var y="jeremyjwan";var a="@berke";var s="ley.edu";yas=y+a+s;document.write('<a href="mailto:'+yas+'">'+yas+'</a>');</script><noscript>Please enable JavaScript to see my email address.</noscript></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1 col-md-1 text-right"><strong>github:</strong></div>
+              <div class="col-xs-11 col-md-11"><a href="https://github.com/jeremyjwan" target="_blank">github.com/<strong>jeremyjwan</strong></a></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1 col-md-1 text-right"><strong>linkedin:</strong></div>
+              <div class="col-xs-11 col-md-11"><a href="https://linkedin.com/in/jeremyjwan" target="_blank">linkedin.com/<strong>jeremyjwan</strong></a></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1 col-md-1 text-right"><strong>more:</strong></div>
+              <div class="col-xs-11 col-md-11"><a href="Jeremy_Wan_Resume.pdf" target="_blank">see my resume (PDF)</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
+
+
